@@ -9,9 +9,14 @@ read it before touching anything visual.**
 **GitHub remote**: whenever the user says "push" / "push to GitHub" /
 similar, with no other repo specified, push here:
 `https://github.com/HiddenSkyAkash/garys-pipelining-web.git`. It's wired
-up as the `origin` remote already (`git remote -v` to confirm). Push the
-current branch (`git push -u origin <branch>` if it has no upstream yet),
-don't assume `main` without checking what branch is actually checked out.
+up as the `origin` remote already (`git remote -v` to confirm). The
+local and remote branch is **`main`** (not `master`, that was a
+one-time mistake on 2026-06-27 that got force-pushed over and the
+stray remote branch is already deleted, don't recreate it). `origin/main`
+was force-pushed once already to replace a pre-existing, unrelated-history
+manual upload that lived there before this repo's real git history existed;
+that's resolved now, normal `git push` should work going forward unless
+something else touches origin/main out of band.
 
 ## What this is
 
